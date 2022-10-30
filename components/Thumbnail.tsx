@@ -25,7 +25,7 @@ const Thumbnail = ({ url, image, description }: ThumbnailProps) => {
         borderRadius="xl"
         overflow="hidden"
       >
-        <Image src={image} />
+        <Image src={image} alt={description} />
       </AspectRatio>
       <LinkOverlay href={url}>
         <Text

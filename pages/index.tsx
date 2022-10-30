@@ -39,8 +39,8 @@ const Banner = () => (
         size="2xl"
       />
       <Box fontSize="32px" fontWeight="light">
-        Hi, I'm Jeffery. A Frontend developer works in Taipei, Taiwan. I enjoy
-        building websites and apps to solve people's need.
+        Hi, I&#39;m Jeffery. A Frontend developer works in Taipei, Taiwan. I
+        enjoy building websites and apps to solve people&#39;s need.
       </Box>
     </Box>
   </Box>
