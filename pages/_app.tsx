@@ -1,6 +1,7 @@
 import type { AppProps } from "next/app";
 import { ChakraProvider } from "@chakra-ui/react";
 import Script from "next/script";
+import Head from "next/head";
 
 function MyApp({ Component, pageProps }: AppProps) {
     return (
