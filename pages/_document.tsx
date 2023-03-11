@@ -18,6 +18,11 @@ const Document = () => {
                         `,
                     }}
                 ></Script>
+                <Script
+                    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9667599254860298"
+                    crossOrigin="anonymous"
+                    async
+                ></Script>
             </Head>
             <body>
                 <Main />
