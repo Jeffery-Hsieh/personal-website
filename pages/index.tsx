@@ -21,6 +21,7 @@ import {
 import Head from "next/head";
 
 import Thumbnail from "../components/Thumbnail";
+import Script from "next/script";
 
 const Banner = () => (
     <Box h="100vh" position="relative">
@@ -174,6 +175,53 @@ const Projects = () => (
     </Box>
 );
 
+const GoogleAdsSense = () => (
+    <Grid templateColumns="repeat(3, 200px)">
+        <GridItem>
+            <Script
+                id="google-ads-1"
+                src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9667599254860298"
+                crossOrigin="anonymous"
+            ></Script>
+            <ins
+                className="adsbygoogle"
+                style={{ display: "block" }}
+                data-ad-client="ca-pub-9667599254860298"
+                data-ad-slot="4907596140"
+                data-ad-format="auto"
+                data-full-width-responsive="true"
+            ></ins>
+            <Script
+                id="google-ads-1-seconds"
+                dangerouslySetInnerHTML={{
+                    __html: `(adsbygoogle = window.adsbygoogle || []).push({});`,
+                }}
+            ></Script>
+        </GridItem>
+        <GridItem>
+            <Script
+                id="google-ads-2"
+                src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9667599254860298"
+                crossOrigin="anonymous"
+            ></Script>
+            <ins
+                className="adsbygoogle"
+                style={{ display: "block" }}
+                data-ad-client="ca-pub-9667599254860298"
+                data-ad-slot="8372198434"
+                data-ad-format="auto"
+                data-full-width-responsive="true"
+            ></ins>
+            <Script
+                id="google-ads-2-adsbygoogle"
+                dangerouslySetInnerHTML={{
+                    __html: `(adsbygoogle = window.adsbygoogle || []).push({});`,
+                }}
+            ></Script>
+        </GridItem>
+    </Grid>
+);
+
 const Home: NextPage = () => {
     return (
         <Box>
@@ -210,6 +258,7 @@ const Home: NextPage = () => {
                 <Banner />
                 <Portfolio />
                 <Projects />
+                <GoogleAdsSense />
             </Container>
             <Box as="footer" mt="4"></Box>
         </Box>
